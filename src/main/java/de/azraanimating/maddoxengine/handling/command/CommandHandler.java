@@ -18,6 +18,10 @@ public class CommandHandler {
 
     private HashMap<String, Command> commands;
 
+    public CommandHandler() {
+        this.commands = new HashMap<>();
+    }
+
     public void registerCommand(Command command) {
         this.commands.put(command.getName(), command);
     }
