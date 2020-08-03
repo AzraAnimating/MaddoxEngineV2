@@ -106,7 +106,7 @@ public class MaddoxMember {
     }
 
     public List<Role> getRoles() {
-        return (ArrayList<Role>) this.member.getRoles();
+        return this.member.getRoles();
     }
 
     public OffsetDateTime getTimeJoined() {
