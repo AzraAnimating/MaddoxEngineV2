@@ -107,11 +107,7 @@ public class CommandHandler {
             return false;
         }
 
-        if(event.getAuthor().equals(event.getJDA().getSelfUser())) {
-            return false;
-        }
-
-        return true;
+        return !event.getAuthor().equals(event.getJDA().getSelfUser());
     }
 
     public boolean isMessageEligableForCommandExecution(String messageContent, GuildMessageReceivedEvent event) {
@@ -123,11 +119,7 @@ public class CommandHandler {
             return false;
         }
 
-        if(event.getAuthor().equals(event.getJDA().getSelfUser())) {
-            return false;
-        }
-
-        return true;
+        return !event.getAuthor().equals(event.getJDA().getSelfUser());
     }
 
 }

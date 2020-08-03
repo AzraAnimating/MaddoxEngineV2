@@ -105,7 +105,7 @@ public class MaddoxMember {
         return this.member.getJDA();
     }
 
-    public ArrayList<Role> getRoles() {
+    public List<Role> getRoles() {
         return (ArrayList<Role>) this.member.getRoles();
     }
 
