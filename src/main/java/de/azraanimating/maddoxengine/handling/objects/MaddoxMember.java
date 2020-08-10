@@ -42,7 +42,7 @@ public class MaddoxMember {
     }
 
     public String getUsername() {
-        return this.member.getEffectiveName();
+        return this.member.getUser().getName();
     }
 
     public AuditableRestAction<Void> ban(final int deletionDays) {
